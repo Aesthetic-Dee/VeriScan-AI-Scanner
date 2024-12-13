@@ -1,0 +1,242 @@
+@import '../../index.scss';
+
+.bg {
+  background-color: teal;
+  min-height: 100vh;
+}
+.deepfake{
+  width: 100%;
+  padding: 0rem 2rem;
+  margin-bottom: 5rem;
+
+  @include mobile {
+      padding: 0rem 1rem;
+    }
+
+  header{
+    height: 60px;
+    padding: 0rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+  }
+
+  .disclaimer{
+
+
+    p{
+      margin-top: .5rem;
+      font-size: .8rem;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .textContainer{
+    width: 100%;
+    color: white;
+
+
+    p{
+      font-size: 1rem;
+      margin-top: 2rem;
+    }
+
+    .params{
+      font-size: .6rem;
+      text-decoration: underline;
+      color: rgb(255, 255, 255);
+      margin-top: .5rem;
+    }
+
+    input{
+      width: 100%;
+      background-color: rgba(245, 245, 220, 0.506);
+      padding: 1.2rem;
+      margin-top: .5rem;
+      border-radius: 5px;
+    }
+
+    button{
+      font-family: 'Poppins', sans-serif;
+      margin-top: 1rem;
+      font-size: .8rem;
+      font-weight: 600;
+      width:165px;
+      padding: 10px 20px;
+      border: 0;
+      background-color: rgba(58, 58, 58, 0.506);
+      color: white;
+      border-radius: 3px;
+      transition: all .15s ease;
+      cursor: pointer;
+
+      &:hover{
+        border: 1px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+      }
+    }
+
+  }
+
+  .p{
+    margin-top: .5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: red;
+  }
+
+  img{
+    width: 700px;
+    height: 500px;
+    object-fit: contain;
+  }
+
+  .loader{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p{
+      font-size: .79rem;
+    }
+  }
+
+  .imageContainer{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    .imgC{
+      width: 100%;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(214, 210, 210, 0.416);
+      border-radius: 10px;
+      flex: 1.5;
+    }
+
+    img{
+      width: 600px;
+      height: 450px;
+      object-fit: contain;
+      border-radius: 5px;
+
+      @include mobile {
+      width: 90%;
+      height: 40vh;
+    }
+
+    }
+
+    .predictionBox{
+      border: 1px solid rgba(214, 210, 210, 0.416) ;
+      padding: 1rem;
+      border-radius: 5px;
+      flex: 1;
+
+
+      .predictions{
+
+        h3{
+          font-size:1rem ;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        .data{
+
+          h1{
+            margin-top: 1rem;
+            font-weight: 600;
+            color: rgb(36, 36, 36);
+            // font-size: 1.7rem;
+          }
+
+          h2{
+            margin-top: 0.5rem;
+            font-size: .9rem;
+            color: rgb(36, 36, 36);
+
+          }
+        }
+      }
+    }
+  }
+
+  .mt{
+    margin-top: 1rem;
+  }
+
+  .records{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+
+    hr{
+        border:0.3px solid rgba(198, 198, 198, 0.243) ;
+        width: 100%;
+        margin: 1rem;
+      }
+
+    .record{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: .5rem;
+
+      @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+      img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+
+        @include mobile {
+          width: 60px;
+          height: 60px;
+
+        }
+      }
+
+      i{
+        flex: 0.1;
+        font-size: .8rem;
+      }
+
+      p{
+        flex: 6;
+        color: rgba(0, 0, 0, 0.389);
+
+        span{
+          font-size: 1.2rem;
+          color: rgb(30, 30, 30);
+        }
+      }
+      
+    }
+  }
+
+}

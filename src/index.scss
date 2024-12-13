@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Exo 2", sans-serif;
+  user-select: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+@mixin mobile {
+  @media (max-width : 700px){
+    @content;
+  }
+}
+
